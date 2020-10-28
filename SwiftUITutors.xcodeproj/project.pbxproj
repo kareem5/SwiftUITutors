@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		622BBB4C2549AFC00002943B /* SwiftUITutorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622BBB4B2549AFC00002943B /* SwiftUITutorsTests.swift */; };
 		624E9CCB25444A8F00395511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9CCA25444A8F00395511 /* AppDelegate.swift */; };
 		624E9CCD25444A8F00395511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9CCC25444A8F00395511 /* SceneDelegate.swift */; };
 		624E9CCF25444A8F00395511 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9CCE25444A8F00395511 /* ContentView.swift */; };
@@ -17,7 +18,20 @@
 		624E9CE325448DAD00395511 /* TutorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624E9CE225448DAD00395511 /* TutorDetail.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		622BBB4E2549AFC00002943B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624E9CBF25444A8F00395511 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 624E9CC625444A8F00395511;
+			remoteInfo = SwiftUITutors;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		622BBB492549AFC00002943B /* SwiftUITutorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUITutorsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		622BBB4B2549AFC00002943B /* SwiftUITutorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorsTests.swift; sourceTree = "<group>"; };
+		622BBB4D2549AFC00002943B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624E9CC725444A8F00395511 /* SwiftUITutors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624E9CCA25444A8F00395511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624E9CCC25444A8F00395511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		622BBB462549AFC00002943B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		624E9CC425444A8F00395511 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		622BBB4A2549AFC00002943B /* SwiftUITutorsTests */ = {
+			isa = PBXGroup;
+			children = (
+				622BBB4B2549AFC00002943B /* SwiftUITutorsTests.swift */,
+				622BBB4D2549AFC00002943B /* Info.plist */,
+			);
+			path = SwiftUITutorsTests;
+			sourceTree = "<group>";
+		};
 		624E9CBE25444A8F00395511 = {
 			isa = PBXGroup;
 			children = (
 				624E9CC925444A8F00395511 /* SwiftUITutors */,
+				622BBB4A2549AFC00002943B /* SwiftUITutorsTests */,
 				624E9CC825444A8F00395511 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				624E9CC725444A8F00395511 /* SwiftUITutors.app */,
+				622BBB492549AFC00002943B /* SwiftUITutorsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +116,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		622BBB482549AFC00002943B /* SwiftUITutorsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 622BBB502549AFC00002943B /* Build configuration list for PBXNativeTarget "SwiftUITutorsTests" */;
+			buildPhases = (
+				622BBB452549AFC00002943B /* Sources */,
+				622BBB462549AFC00002943B /* Frameworks */,
+				622BBB472549AFC00002943B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				622BBB4F2549AFC00002943B /* PBXTargetDependency */,
+			);
+			name = SwiftUITutorsTests;
+			productName = SwiftUITutorsTests;
+			productReference = 622BBB492549AFC00002943B /* SwiftUITutorsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		624E9CC625444A8F00395511 /* SwiftUITutors */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 624E9CDB25444A9100395511 /* Build configuration list for PBXNativeTarget "SwiftUITutors" */;
@@ -110,6 +160,10 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					622BBB482549AFC00002943B = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 624E9CC625444A8F00395511;
+					};
 					624E9CC625444A8F00395511 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -129,11 +183,19 @@
 			projectRoot = "";
 			targets = (
 				624E9CC625444A8F00395511 /* SwiftUITutors */,
+				622BBB482549AFC00002943B /* SwiftUITutorsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		622BBB472549AFC00002943B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		624E9CC525444A8F00395511 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,6 +209,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		622BBB452549AFC00002943B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				622BBB4C2549AFC00002943B /* SwiftUITutorsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		624E9CC325444A8F00395511 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +231,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		622BBB4F2549AFC00002943B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 624E9CC625444A8F00395511 /* SwiftUITutors */;
+			targetProxy = 622BBB4E2549AFC00002943B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		624E9CD525444A9100395511 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -173,6 +251,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		622BBB512549AFC00002943B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftUITutorsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = company.myself.kareem.SwiftUITutorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUITutors.app/SwiftUITutors";
+			};
+			name = Debug;
+		};
+		622BBB522549AFC00002943B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftUITutorsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = company.myself.kareem.SwiftUITutorsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUITutors.app/SwiftUITutors";
+			};
+			name = Release;
+		};
 		624E9CD925444A9100395511 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,6 +452,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		622BBB502549AFC00002943B /* Build configuration list for PBXNativeTarget "SwiftUITutorsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				622BBB512549AFC00002943B /* Debug */,
+				622BBB522549AFC00002943B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		624E9CC225444A8F00395511 /* Build configuration list for PBXProject "SwiftUITutors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
